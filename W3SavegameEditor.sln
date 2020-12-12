@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "W3SavegameEditor", "W3SavegameEditor\W3SavegameEditor.csproj", "{92054529-EA59-4CD9-9C24-019D8B5A0867}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "W3SavegameEditor.Core", "W3SavegameEditor.Core\W3SavegameEditor.Core.csproj", "{9C026DA7-481D-43C6-8C18-635D69FDB423}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "W3SavegameEditor.Core", "W3SavegameEditor.Core\W3SavegameEditor.Core.csproj", "{9C026DA7-481D-43C6-8C18-635D69FDB423}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,5 +24,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EF02657F-858C-49B8-B05E-EE812844FBA4}
 	EndGlobalSection
 EndGlobal

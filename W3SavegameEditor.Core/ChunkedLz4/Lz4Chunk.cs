@@ -15,11 +15,12 @@ namespace W3SavegameEditor.Core.ChunkedLz4
 
         public Span<byte> Read(Stream inputStream)
         {
-            Span<byte> inputData = stackalloc byte[CompressedChunkSize];
+            Span<byte> inputData = stackalloc byte[CompressedChunkSize - 8];
             Span<byte> outputData = new byte[DecompressedChunkSize];
-            
+            inputStream.Seek(8, SeekOrigin.Current);
             inputStream.Read(inputData);
             int bytesDecoded = LZ4Codec.Decode(inputData, outputData);
+
             Debug.Assert(bytesDecoded == DecompressedChunkSize);
             
             Debug.Assert(inputStream.Position == EndOfChunkOffset || EndOfChunkOffset == 0);

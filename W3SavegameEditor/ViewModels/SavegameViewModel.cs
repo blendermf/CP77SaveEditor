@@ -60,19 +60,19 @@ namespace W3SavegameEditor.ViewModels
         private void ExecuteInitializeSavegameList(object obj)
         {
             Savegames.Clear();
-            string gamesavesPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "The Witcher 3\\gamesaves");
-            var filesPaths = Directory.GetFiles(gamesavesPath, "*.sav");
+            string gamesavesPath = Path.Combine(Environment.GetEnvironmentVariable("USERPROFILE"), "Saved Games\\CD Projekt Red\\Cyberpunk 2077");
+            var filesPaths = Directory.GetDirectories(gamesavesPath, "*", SearchOption.TopDirectoryOnly);
 
             foreach (var filePath in filesPaths)
             {
-                var thumbnailFilePath = Path.Combine(Path.GetDirectoryName(filePath) ?? "", Path.GetFileNameWithoutExtension(filePath) + ".png");
-
-                Savegames.Add(new SavegameModel
+                var thumbnailFilePath = Path.Combine(filePath, "screenshot.png");
+                var model = new SavegameModel
                 {
                     Name = Path.GetFileName(filePath),
-                    Path = filePath,
+                    Path = Path.Combine(filePath, "sav.dat"),
                     ThumbnailPath = thumbnailFilePath
-                });
+                };
+                Savegames.Add(model);
             }
         }
 
@@ -89,7 +89,7 @@ namespace W3SavegameEditor.ViewModels
                 throw new ArgumentException("parameter");
             }
             
-            SavegameFile.ReadAsync(savegame.Path, Progress)
+            SavegameFile.ReadAsync(savegame.Path, savegame.Name, Progress)
                 .ContinueWith(t =>
                 {
                     var file = t.Result;

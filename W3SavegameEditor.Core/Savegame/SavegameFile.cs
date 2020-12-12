@@ -54,19 +54,21 @@ namespace W3SavegameEditor.Core.Savegame
 
         public static Task<SavegameFile> ReadAsync(
             string path,
+            string name,
             IReadSavegameProgress progress = null)
         {
-            return Task.Run(() => Read(path, progress));
+            return Task.Run(() => Read(path, name, progress));
         }
 
         public static SavegameFile Read(
             string path,
+            string name,
             IReadSavegameProgress progress = null)
         {
 
             if (progress != null) progress.Report(true, true, 0, 0);
             using (var compressedInputStream = File.OpenRead(path))
-            using (var inputStream = ChunkedLz4File.Decompress(compressedInputStream))
+            using (var inputStream = ChunkedLz4File.Decompress(compressedInputStream, name))
             using (var reader = new BinaryReader(inputStream, Encoding.ASCII, true))
             {
                 var savegameFile = new SavegameFile();
@@ -258,6 +260,8 @@ namespace W3SavegameEditor.Core.Savegame
                 };
             }
         }
+
+
 
         private void ReadHeader(BinaryReader reader)
         {

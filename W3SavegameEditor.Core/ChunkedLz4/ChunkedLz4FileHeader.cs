@@ -14,10 +14,13 @@ namespace W3SavegameEditor.Core.ChunkedLz4
             using (var reader = new BinaryReader(input, Encoding.ASCII, true))
             {
                 string saveFileHeader = reader.ReadString(4);
-                if (saveFileHeader != "SNFH")
+                if (saveFileHeader != "VASC")
                 {
                     throw new InvalidOperationException();
                 }
+
+                // Currently Unknown data
+                reader.ReadString(21);
 
                 string chunkedLz4FileHeader = reader.ReadString(4);
                 if (chunkedLz4FileHeader != "FZLC")
