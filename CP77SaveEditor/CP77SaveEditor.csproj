@@ -7,8 +7,8 @@
     <ProjectGuid>{92054529-EA59-4CD9-9C24-019D8B5A0867}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>W3SavegameEditor</RootNamespace>
-    <AssemblyName>W3SavegameEditor</AssemblyName>
+    <RootNamespace>CP77SaveEditor</RootNamespace>
+    <AssemblyName>CP77SaveEditor</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -106,9 +106,9 @@
     <Resource Include="FodyWeavers.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\W3SavegameEditor.Core\W3SavegameEditor.Core.csproj">
+    <ProjectReference Include="..\CP77SaveEditor.Core\CP77SaveEditor.Core.csproj">
       <Project>{9c026da7-481d-43c6-8c18-635d69fdb423}</Project>
-      <Name>W3SavegameEditor.Core</Name>
+      <Name>CP77SaveEditor.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

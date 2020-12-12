@@ -7,7 +7,7 @@
     xmlns:viewModels="clr-namespace:W3SavegameEditor.ViewModels"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" 
         x:Class="W3SavegameEditor.MainWindow"
-    Title="W3SavegameEditor"
+    Title="CP77 Save Editor"
         Height="520"
         Width="800">
     <controls:MetroWindow.Resources>
@@ -23,11 +23,12 @@
             <RowDefinition Height="25"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="300"/>
+            <ColumnDefinition Width="42.667"/>
+            <ColumnDefinition Width="257.333"/>
             <ColumnDefinition Width="500*"/>
         </Grid.ColumnDefinitions>
-        <Button Content="Refresh" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" Command="{Binding InitializeSavegames, Mode=OneWay}" />
-        <DataGrid x:Name="SavegameGrid" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" Grid.Column="0" Margin="10,10,10,10" ItemsSource="{Binding Savegames}" AutoGenerateColumns="False" SelectionMode="Single" SelectedItem="{Binding SelectedSavegame}">
+        <Button Content="Refresh" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" Command="{Binding InitializeSavegames, Mode=OneWay}" Grid.ColumnSpan="2" />
+        <DataGrid x:Name="SavegameGrid" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" Grid.Column="0" Margin="10,10,10,10" ItemsSource="{Binding Savegames}" AutoGenerateColumns="False" SelectionMode="Single" SelectedItem="{Binding SelectedSavegame}" Grid.ColumnSpan="2">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding Name}" ClipboardContentBinding="{x:Null}" Header="Name" CanUserResize="False" IsReadOnly="True"/>
             </DataGrid.Columns>
@@ -37,7 +38,7 @@
                 </i:EventTrigger>
             </i:Interaction.Triggers>
         </DataGrid>
-        <TabControl Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="0" Grid.RowSpan="2" DataContext="{Binding SelectedSavegame}">
+        <TabControl Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="0" Grid.RowSpan="2" DataContext="{Binding SelectedSavegame}">
             <TabItem Header="Info" HorizontalAlignment="Left" Width="58">
                 <Grid Background="#252525">
                     <Label Content="Name" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
@@ -100,6 +101,6 @@
                 </Grid>
             </TabItem>
         </TabControl>
-        <controls:MetroProgressBar Grid.Column="1" HorizontalAlignment="Stretch" Margin="5,1,1,5" Grid.Row="2" VerticalAlignment="Top" Height="18" Maximum="{Binding Progress.Max}" Value="{Binding Progress.Value}" IsIndeterminate="{Binding Progress.Indeterministic}" Style="{DynamicResource MetroProgressBar}" Visibility="{Binding Progress.Running, Converter={StaticResource BooleanToVisibilityConverter}}"/>
+        <controls:MetroProgressBar Grid.Column="2" HorizontalAlignment="Stretch" Margin="5,1,1,0" Grid.Row="2" VerticalAlignment="Top" Height="18" Maximum="{Binding Progress.Max}" Value="{Binding Progress.Value}" IsIndeterminate="{Binding Progress.Indeterministic}" Style="{DynamicResource MetroProgressBar}" Visibility="{Binding Progress.Running, Converter={StaticResource BooleanToVisibilityConverter}}"/>
     </Grid>
 </controls:MetroWindow>
