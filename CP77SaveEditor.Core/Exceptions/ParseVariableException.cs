@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace W3SavegameEditor.Core.Exceptions
+namespace CP77SaveEditor.Core.Exceptions
 {
 
     [Serializable]

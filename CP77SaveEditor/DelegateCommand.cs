@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Input;
 
-namespace W3SavegameEditor
+namespace CP77SaveEditor
 {
     public class DelegateCommand : ICommand
     {

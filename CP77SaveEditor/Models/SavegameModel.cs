@@ -1,4 +1,4 @@
-﻿namespace W3SavegameEditor.Models
+﻿namespace CP77SaveEditor.Models
 {
     public class SavegameModel
     {

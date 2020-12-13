@@ -4,10 +4,10 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <LangVersion>7.3</LangVersion>
     <Version>0.2.0</Version>
-    <Authors>Atvaark</Authors>
-    <Copyright>Copyright ©  2015 Atvaark</Copyright>
-    <PackageLicenseUrl>https://github.com/Atvaark/W3SavegameEditor/blob/master/LICENSE</PackageLicenseUrl>
-    <RepositoryUrl>https://github.com/Atvaark/W3SavegameEditor</RepositoryUrl>
+    <Authors>blendermf</Authors>
+    <Copyright>Copyright © 2020 blendermf</Copyright>
+    <PackageLicenseUrl>https://github.com/blendermf/CP77SaveEditor/blob/master/LICENSE</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/blendermf/CP77SaveEditor</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 

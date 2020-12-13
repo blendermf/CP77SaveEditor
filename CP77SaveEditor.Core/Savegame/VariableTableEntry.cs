@@ -1,4 +1,4 @@
-namespace W3SavegameEditor.Core.Savegame
+namespace CP77SaveEditor.Core.Savegame
 {
     public class VariableTableEntry
     {

@@ -1,7 +1,7 @@
-﻿using W3SavegameEditor.Core.Savegame.Attributes;
-using W3SavegameEditor.Core.Savegame.Values.Engine;
+﻿using CP77SaveEditor.Core.Savegame.Attributes;
+using CP77SaveEditor.Core.Savegame.Values.Engine;
 
-namespace W3SavegameEditor.Core.Savegame.Values
+namespace CP77SaveEditor.Core.Savegame.Values
 {
     [CName("timerManager")]
     public class TimerManager

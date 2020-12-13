@@ -1,6 +1,6 @@
-﻿using W3SavegameEditor.Core.Savegame.Attributes;
+﻿using CP77SaveEditor.Core.Savegame.Attributes;
 
-namespace W3SavegameEditor.Core.Savegame.Values.Gwint
+namespace CP77SaveEditor.Core.Savegame.Values.Gwint
 {
     public class GwintDecks
     {

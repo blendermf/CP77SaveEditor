@@ -1,4 +1,4 @@
-﻿namespace W3SavegameEditor.Core.Savegame.Variables
+﻿namespace CP77SaveEditor.Core.Savegame.Variables
 {
     public class PorpVariable : TypedVariable
     {

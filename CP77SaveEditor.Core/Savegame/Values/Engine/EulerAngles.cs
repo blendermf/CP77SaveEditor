@@ -1,4 +1,4 @@
-﻿namespace W3SavegameEditor.Core.Savegame.Values.Engine
+﻿namespace CP77SaveEditor.Core.Savegame.Values.Engine
 {
     public class EulerAngles
     {

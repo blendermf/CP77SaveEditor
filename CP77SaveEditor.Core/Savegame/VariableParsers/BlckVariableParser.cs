@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.IO;
-using W3SavegameEditor.Core.Exceptions;
-using W3SavegameEditor.Core.Savegame.Variables;
+using CP77SaveEditor.Core.Exceptions;
+using CP77SaveEditor.Core.Savegame.Variables;
 
-namespace W3SavegameEditor.Core.Savegame.VariableParsers
+namespace CP77SaveEditor.Core.Savegame.VariableParsers
 {
     public class BlckVariableParser : VariableParserBase<BlckVariable>
     {

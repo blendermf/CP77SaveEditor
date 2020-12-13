@@ -2,7 +2,7 @@
 using System.IO;
 using System.Text;
 
-namespace W3SavegameEditor.Core.ChunkedLz4
+namespace CP77SaveEditor.Core.ChunkedLz4
 {
     public class ChunkedLz4FileHeader
     {

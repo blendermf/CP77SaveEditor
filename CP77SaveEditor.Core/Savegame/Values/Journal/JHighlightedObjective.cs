@@ -1,7 +1,7 @@
 ﻿using System;
-using W3SavegameEditor.Core.Savegame.Attributes;
+using CP77SaveEditor.Core.Savegame.Attributes;
 
-namespace W3SavegameEditor.Core.Savegame.Values.Journal
+namespace CP77SaveEditor.Core.Savegame.Values.Journal
 {
     public class JHighlightedObjective
     {

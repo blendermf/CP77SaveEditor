@@ -1,4 +1,4 @@
-﻿namespace W3SavegameEditor.Core.Savegame.Values.Gwint
+﻿namespace CP77SaveEditor.Core.Savegame.Values.Gwint
 {
     public class CollectionSize
     {

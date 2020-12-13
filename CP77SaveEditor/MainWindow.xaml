@@ -3,10 +3,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
     xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
-    xmlns:models="clr-namespace:W3SavegameEditor.Models"
-    xmlns:viewModels="clr-namespace:W3SavegameEditor.ViewModels"
+    xmlns:models="clr-namespace:CP77SaveEditor.Models"
+    xmlns:viewModels="clr-namespace:CP77SaveEditor.ViewModels"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" 
-        x:Class="W3SavegameEditor.MainWindow"
+        x:Class="CP77SaveEditor.MainWindow"
     Title="CP77 Save Editor"
         Height="520"
         Width="800">

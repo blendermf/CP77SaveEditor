@@ -2,7 +2,7 @@
 using System.Buffers;
 using System.IO;
 
-namespace W3SavegameEditor.Core
+namespace CP77SaveEditor.Core
 {
     internal static class ExtensionMethods
     {

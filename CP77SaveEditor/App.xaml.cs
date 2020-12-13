@@ -1,4 +1,4 @@
-﻿namespace W3SavegameEditor
+﻿namespace CP77SaveEditor
 {
     /// <summary>
     /// Interaktionslogik für "App.xaml"

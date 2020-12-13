@@ -1,7 +1,7 @@
 ﻿using System;
-using W3SavegameEditor.Core.Savegame.Attributes;
+using CP77SaveEditor.Core.Savegame.Attributes;
 
-namespace W3SavegameEditor.Core.Savegame.Values.Quests
+namespace CP77SaveEditor.Core.Savegame.Values.Quests
 {
     [CSerializable("questBlock")]
     public class QuestBlock

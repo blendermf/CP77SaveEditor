@@ -1,9 +1,9 @@
-﻿using W3SavegameEditor.Core.Savegame.Attributes;
-using W3SavegameEditor.Core.Savegame.Values.Gwint;
-using W3SavegameEditor.Core.Savegame.Values.Journal;
-using W3SavegameEditor.Core.Savegame.Values.Quests;
+﻿using CP77SaveEditor.Core.Savegame.Attributes;
+using CP77SaveEditor.Core.Savegame.Values.Gwint;
+using CP77SaveEditor.Core.Savegame.Values.Journal;
+using CP77SaveEditor.Core.Savegame.Values.Quests;
 
-namespace W3SavegameEditor.Core.Savegame.Values
+namespace CP77SaveEditor.Core.Savegame.Values
 {
     [CSerializable("SavegameRoot", Custom = true)]
     public class SavegameRoot

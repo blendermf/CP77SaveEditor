@@ -1,4 +1,4 @@
-﻿namespace W3SavegameEditor.Core.Savegame.Values
+﻿namespace CP77SaveEditor.Core.Savegame.Values
 {
     public class TagList
     {

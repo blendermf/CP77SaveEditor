@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.IO;
 using K4os.Compression.LZ4;
 
-namespace W3SavegameEditor.Core.ChunkedLz4
+namespace CP77SaveEditor.Core.ChunkedLz4
 {
     public class Lz4Chunk
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace W3SavegameEditor.Core.Savegame.Attributes
+namespace CP77SaveEditor.Core.Savegame.Attributes
 {
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Property)]
     public class CNameAttribute : Attribute

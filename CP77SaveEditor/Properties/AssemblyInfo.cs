@@ -2,12 +2,12 @@
 using System.Runtime.InteropServices;
 using System.Windows;
 
-[assembly: AssemblyTitle("W3SavegameEditor")]
+[assembly: AssemblyTitle("CP77SaveEditor")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("W3SavegameEditor")]
-[assembly: AssemblyCopyright("Copyright ©  2015 Atvaark")]
+[assembly: AssemblyProduct("CP77SaveEditor")]
+[assembly: AssemblyCopyright("Copyright © 2020 blendermf")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]
